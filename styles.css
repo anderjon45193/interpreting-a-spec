@@ -1,3 +1,6 @@
+* {
+    font-family: "Ubuntu", sans-serif;
+}
 .logo-login {
     display: flex;
     justify-content: space-between;
@@ -8,25 +11,44 @@
     padding: 7px 25px;
 }
 
-nav {
-    display: inline-block;
+.top-nav {
     border-top-style: solid;
     border-bottom-style: solid;
 }
 
-h1 {
-    align-content: center;
-    border-style: solid;
-    width: 200px;
-}
-
-img {
-    display: block;
-    width: 500px;
-    height: 300px;
-    margin: auto;
+ul, ol {
+    display: flex; /* https://stackoverflow.com/questions/42880090/a-better-way-to-space-out-navigation-bar-items#:~:text=Put%20display%3A%20flex%3B%20on%20your,size%2C%20they%20adapt%20to%20fit. */
+    justify-content: space-around;
+    list-style: none;
 }
 
 a {
     text-decoration: none;
+    color: grey;
+    font-weight: bold;
+}
+
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+section {
+    display: flex;
+    border-style: solid;
+}
+
+img {
+    width: 500px;
+    align-self: center;
+}
+
+h1 {
+    align-self: center;
+}
+
+ol {
+    text-align: right;
 }
