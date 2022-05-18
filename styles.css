@@ -36,7 +36,7 @@ article {
 }
 
 section {
-    display: flex;
+    flex: 1 0 0px;
     border-style: solid;
 }
 
@@ -47,8 +47,20 @@ img {
 
 h1 {
     align-self: center;
+    border-style: solid;
+    padding: 5px 15px 5px 15px;
 }
 
 ol {
     text-align: right;
+}
+
+span {
+    align-self: center;
+    flex: 1 1 0px;
+}
+
+p {
+    width: 400px;
+    text-align: center;
 }
