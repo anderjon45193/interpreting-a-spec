@@ -1,0 +1,14 @@
+.logo-login {
+    display: flex;
+    justify-content: space-between;
+}
+
+.login, .logo {
+    border-style: solid;
+    padding: 7px 25px;
+}
+
+nav {
+    display: flex;
+    justify-items: flex-start;
+}
