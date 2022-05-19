@@ -1,5 +1,6 @@
 * {
     font-family: "Ubuntu", sans-serif;
+    background-color: #F0F8FF;
 }
 .logo-login {
     display: flex;
@@ -32,11 +33,9 @@ a {
 article {
     display: flex;
     flex-direction: column;
-    align-content: center;
 }
 
 section {
-    flex: 1 0 0px;
     border-style: solid;
 }
 
@@ -56,11 +55,9 @@ ol {
 }
 
 span {
-    align-self: center;
-    flex: 1 1 0px;
+    
 }
 
 p {
-    width: 400px;
     text-align: center;
 }
