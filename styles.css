@@ -1,6 +1,6 @@
 * {
     font-family: "Ubuntu", sans-serif;
-    background-color: #F0F8FF;
+    background-color: white;
 }
 .logo-login {
     display: flex;
@@ -17,13 +17,13 @@
     border-bottom-style: solid;
 }
 
-ul, ol {
+.list-nav {
     display: flex; /* https://stackoverflow.com/questions/42880090/a-better-way-to-space-out-navigation-bar-items#:~:text=Put%20display%3A%20flex%3B%20on%20your,size%2C%20they%20adapt%20to%20fit. */
     justify-content: space-around;
     list-style: none;
 }
 
-a {
+.top-list-nav, .foot {
     text-decoration: none;
     color: grey;
     font-weight: bold;
@@ -33,31 +33,133 @@ a {
 article {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 section {
     border-style: solid;
+    display: flex;
+    font-size: 24px;
+    width: 75%;
 }
 
 img {
-    width: 500px;
+    width: 75%;
+    height: 650px;
     align-self: center;
+}
+
+.lore-title, .ipsum-title {
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
 }
 
 h1 {
     align-self: center;
     border-style: solid;
     padding: 5px 15px 5px 15px;
+    font-size: 85px;
+    width: 75%;
 }
 
 ol {
-    text-align: right;
+    display: flex;
+    justify-content: right;
+    list-style: none;
 }
 
-span {
-    
+ol li {
+    padding: 15px;
+}
+
+span, .share {
+    align-self: left;
+    font-size: 24px;
 }
 
 p {
+    width: 75%;
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.article-title {
+    text-align: left;
+}
+
+.recursive-list, .iterative-list {
+    display: inline-block;
+    list-style-type: none; /* https://stackoverflow.com/questions/3200249/html-list-style-type-dash */
+    padding: 0;
+    margin-top: -30px;
+}
+
+.recursive-list {
+    margin-left: 450px;
+}
+
+.rec-head {
+    margin-left: 635px;
+}
+
+.recursive-list > li:before, .iterative-list > li:before {
+    content: "- "; /* https://stackoverflow.com/questions/3200249/html-list-style-type-dash */
+    color: blue;
+}
+
+h3 {
+    display: block;
+}
+
+.list-nostyle {
+    list-style: none;
+}
+
+.foot-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.it-links, .rec-links {
+    color: blue;
+}
+
+.ft {
+    text-align: right;
+}
+
+/* https://www.w3schools.com/howto/howto_css_social_media_buttons.asp */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
     text-align: center;
+    text-decoration: none;
+}
+
+/* https://www.w3schools.com/howto/howto_css_social_media_buttons.asp */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* https://www.w3schools.com/howto/howto_css_social_media_buttons.asp */
+.fa-facebook {
+    display: block;
+    background: #3B5998;
+    color: white;
+    margin-left: 1055px;
+}
+
+/* https://www.w3schools.com/howto/howto_css_social_media_buttons.asp */
+.fa-twitter {
+    display: block;
+    background: #55ACEE;
+    color: white;
+    margin-left: 1055px;
+}
+
+.share {
+    margin-left: 1055px;
+    border: solid;
 }
