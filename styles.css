@@ -73,9 +73,11 @@ ol li {
     padding: 15px;
 }
 
-span, .share {
-    align-self: left;
+span {
+    align-self: flex-start;
     font-size: 24px;
+    margin-left: 290px;
+    margin-top: 0;
 }
 
 p {
@@ -145,7 +147,7 @@ h3 {
 
 /* https://www.w3schools.com/howto/howto_css_social_media_buttons.asp */
 .fa-facebook {
-    display: block;
+    display: flex;
     background: #3B5998;
     color: white;
     margin-left: 1055px;
@@ -153,13 +155,23 @@ h3 {
 
 /* https://www.w3schools.com/howto/howto_css_social_media_buttons.asp */
 .fa-twitter {
-    display: block;
+    display: flex;
     background: #55ACEE;
     color: white;
     margin-left: 1055px;
 }
 
 .share {
+    width: 50px;
+    padding: 20px;
     margin-left: 1055px;
-    border: solid;
+    border: thin;
+    background-color: green;
+    color: white;
+}
+
+.logo-pic {
+    width: 45px;
+    height: 45px;
+    margin-right: 1150px;
 }
